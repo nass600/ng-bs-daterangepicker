@@ -29,7 +29,8 @@
 					}));
 					options.ranges = $attributes.ranges && $parse($attributes.ranges)($scope);
 					options.locale = $attributes.locale && $parse($attributes.locale)($scope);
-					options.opens = $attributes.opens || $parse($attributes.opens)($scope);
+					options.opens = $attributes.opens || $parse($attributes.opens)($scope);			
+					options.parentEl = $attributes.parentEl;
 
 					if ($attributes.enabletimepicker) {
 						options.timePicker = true;
